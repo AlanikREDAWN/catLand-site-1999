@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus 1.2">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#CC99FF" TEXT="#660099">
+	<!-- <EMBED SRC="happy-cat.wav" AUTOSTART="true" LOOP="true" HIDDEN="true"> -->
+	<BGSOUND ID="music" SRC="happy-cat.wav" LOOP="infinite" VOLUME="-50">
+	<H1>Welcome to <FONT SIZE="32px" COLOR="#660066">Cat Land</FONT></H1>
+	<H2>Where all the cats come to play</H2>
+	<B><MARQUEE STYLE="padding: 20px">have some fun - come and play - hang out and chill</MARQUEE></B>
+
+	<IMG SRC="Cat_walk.gif" BORDER=0 ALT="" STYLE="filter: FlipH;">
+	
+	<TABLE STYLE="padding: 20px;" ALIGN="center">
+	<TR>
+		<TD STYLE="padding: 5px">
+			<IMG SRC="Cat.gif" BORDER=0 ALT="">
+		</TD>
+
+		<TD STYLE="background-color: #CCFFFF; padding: 5px">
+			<P ONCLICK="toggleMusic()" ID="toggle_music">pause music</P>
+		</TD>
+
+		<TD STYLE="padding: 5px">
+			<IMG SRC="Cat_white.gif" BORDER=0 ALT="">
+		</TD>
+	</TR>
+	</TABLE>
+
+	<!-- <IMG SRC="Cat_peek.gif" BORDER=0 ALT="" ALIGN="center"> -->
+
+<!-- 	<DIV STYLE="width: fit-content; background-color: #CCFFFF; padding: 5px; float: left;">
+		<IMG SRC="Cat.gif" BORDER=0 ALT="">
+		<P ONCLICK="toggleMusic()" ID="toggle_music">pause music</P>
+		<IMG SRC="Cat_white.gif" BORDER=0 ALT="">
+	</DIV> -->
+	<BR>
+	<BR>
+	<BR>
+	<IMG SRC="Cat_walk.gif" BORDER=0 ALT="">
+	<P>music credits: im-leia on newgrounds</P>
+	
+</BODY>
+</HTML>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+	document.all.music.volume = -3000;
+	document.all.toggle_music.innerText = "pause music";
+
+	function toggleMusic() {
+		if (document.all.toggle_music.innerText == "pause music") {
+			document.all.music.volume = -10000;
+			document.all.toggle_music.innerText = "play music";
+		} else if (document.all.toggle_music.innerText == "play music") {
+			document.all.music.volume = -3000;
+			document.all.toggle_music.innerText = "pause music";
+		}
+	}
+</SCRIPT>
